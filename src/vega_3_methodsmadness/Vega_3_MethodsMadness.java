@@ -27,6 +27,10 @@ public class Vega_3_MethodsMadness extends Application {
         drawRectangle(gc);
         drawStripes(gc);
         drawStripes2(gc);
+        drawBorder(gc);
+        drawStripes3(gc);
+        drawStripes4(gc);
+        drawStripes5(gc);
         root.getChildren().add(canvas);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
@@ -45,11 +49,28 @@ public class Vega_3_MethodsMadness extends Application {
     }
     private void drawStripes(GraphicsContext gc) {
         gc.setFill(Color.WHITE);
-        gc.fillRoundRect(400, 50, 550, 100, 0, 10);
+        gc.fillRoundRect(400, 50, 555, 100, 0, 10);
     }
     private void drawStripes2(GraphicsContext gc) {
         gc.setFill(Color.WHITE);
-        gc.fillRoundRect(400, 150, 550, 100, 0, 10);
+        gc.fillRoundRect(400, 200, 555, 50, 0, 10);
+    }
+    private void drawStripes3(GraphicsContext gc) {
+        gc.setFill(Color.WHITE);
+        gc.fillRoundRect(102, 300, 845, 50, 0, 10);
+    }
+    private void drawStripes4(GraphicsContext gc) {
+        gc.setFill(Color.WHITE);
+        gc.fillRoundRect(102, 400, 845, 50, 0, 10);
+    }
+    private void drawStripes5(GraphicsContext gc) {
+        gc.setFill(Color.WHITE);
+        gc.fillRoundRect(102, 500, 845, 50, 0, 10);
+    }
+    private void drawBorder(GraphicsContext gc) {
+        gc.setStroke(Color.BLACK);
+        gc.setLineWidth(5);
+        gc.strokeRoundRect(100, 100, 850, 500, 0, 10);
     }
 
 
